@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
 body{
    display: flex;
    align-items: center;
    min-height: 100vh;
+   font-family: 'Padauk', sans-serif;
+   font-weight: 400;
+   background-image: url('../\/image/bg2.jpg');
+   background-repeat: no-repeat;
+   /*background-size: 100% 100%;*/
+   background-size: cover;
+   
 }
 #loginouterbox{
    width: 500px;
@@ -18,12 +27,18 @@ box-shadow: 0px 0px 14px 4px rgba(0,0,0,0.5);
 background: linear-gradient(0deg, rgba(60,139,255,1) 0%, rgba(110,186,255,1) 76%);
    height: 100%;
    float: left;
+
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   text-align: center;
 }
 
 #LoginRightColumn{
    width: 50%;
    height: 100%;
    float: right;
+   background-color: white;
 
    display: flex;
    justify-content: center;
@@ -39,3 +54,93 @@ background: linear-gradient(0deg, rgba(60,139,255,1) 0%, rgba(110,186,255,1) 76%
    background-image: url('../image/blog-wp-login.png');
 
 }
+
+/*left column form*/
+#loginLeftColumn h1{
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+}
+#loginLeftColumn form{
+   width: 75%;
+}
+
+.frmElementSize{
+   width: 100%;
+   height: 40px;
+   border: 0px;
+}
+.roundedCorners{
+   border-radius: 50px;
+}
+input[type="text"], input[type="password"]{
+   outline: none;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+input[type="button"]{
+   color: white;
+   text-transform: uppercase;
+   background-color:rgb(50, 205, 140);
+}
+#loginLeftColumn a {
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 10px;
+   margin-top: 5px;
+}
+#loginLeftColumn a:hover{
+color: red;
+text-decoration: underline;
+}
+#MyCheckBox {
+   font-weight: bold;
+   font-size: 10px;
+   width: 75px;
+}
+#MyCheckBox >input[type="checkbox"]{
+   font-weight: 10px;
+   position: relative;
+   top: 3px;
+}
+#middleRow {
+   margin-top: 5px;
+   margin-bottom: 15px;
+width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+#pseudo::after{
+content:'@' 
+color: blue;
+font-size: 14px;;
+}
+#pseudo::before{
+content: '@';
+color: red;
+font-size: 24px;
+}
+#pseudo::first-letter{
+color: green;
+font-size: 40px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul li:first-child{
+background-color: green;}
+ul li:nth-child(4){
+   background-color: hotpink;
+}
+
+a:link{
+color: red;
+}
+a:visited{
+color: yellow;
+}
+a:active{
+   color: blue;
+}
+a:hover{
+   color: green;}

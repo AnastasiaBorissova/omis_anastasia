@@ -1,0 +1,30 @@
+/* superGlobalSelector*/
+html,body{
+   margin: 0;
+   padding: 0;
+}
+header {
+   background-color: crimson;
+}
+/*Menu*/
+#navright ul{
+   list-style: none;
+   color: white;
+   text-decoration: none;
+   text-align: center;
+   font: 14px;
+}
+#navright ul li {
+   display: inline-block;
+   color: white;
+   text-decoration: none;
+   text-align: center;
+   margin: 5px;
+}
+#navright ul li > a {
+   color: white;
+   text-decoration: none;
+}
+#navright ul li:hover{
+   /*background-color: rgb(83, 128, 0);*/
+   color: blue;
