@@ -14,38 +14,81 @@
       <nav>
          <div id="navleft">
             <!-- <img src="#"> -->
-            <i class="fab fa-autoprefixer"></i>
-            <form>
+            <i class="fab fa-autoprefixer" id="logo"></i>
+            <form id="frmSearch">
                <input type="text" name="search" value="" placeholder="Search...">
-               <input type="button" name="btnSearch" value="..."> 
+               <button type="button" name="btnSearch"> <i class="fas fa-search"></i></button>
             </form>
          </div>
          <div id="navright"> 
             <ul>
                <li>
-                  <i class="fas fa-home"></i>
-                  <a href="a">Home</a>
+                  <a href="a"> <i class="fas fa-home"></i>Home</a>
                </li>
                <li>
-                  <i class="fas fa-building"></i>
-                  <a href="a">Companies</a>
+                  <a href="a"><i class="fas fa-building"></i>Companies</a>
                </li>
                <li>
-                  <i class="fas fa-puzzle-piece"></i>
-                  <a href="a">Projects</a>
+                  <a href="a"><i class="fas fa-puzzle-piece"></i>Projects</a>
                </li>
                <li>
-                  <i class="fas fa-users"></i>
-                  <a href="a">Profiles</a>
+                  <a href="a"> <i class="fas fa-users"></i>Profiles</a>
                </li>
             </ul>
          </div>
       </nav>
    </header>
-   <div>
-<div id="colleft"></div>
-<div id="colcenter"></div>
-<div id="colright"></div>
+   <div id="content">
+<div id="colleft">
+   <div id="userprofile"> 
+    <div id="photo">
+       <img src="img/unnamed.jpg" alt="this is user photo">
+    </div>  
+    <h3>John Doe</h3>
+    <h4>Front-end designer</h4>
+    <div class="block">
+       fghfgh
+    </div>
+    <div class="block">
+      fghfgh
+   </div>
+   <div class="block">
+      fghfgh
+   </div>
+   </div>
+</div>
+<div id="colcenter">
+   <div class="info">
+      <div class="header">
+         <a href="#" class="favorites green">
+            <i class="far fa-bookmark"></i></a>
+         <a href="#" class="email orange">
+            <i class="far fa-envelope"></i>
+         </a>
+
+         <span class="puzzle">epic coder</span><br>
+         <a href="#" id="linkWicon">new link</a>
+      </div>
+      <div class="content"></div>
+      <div class="buttons">
+         <a href="#">link 1</a>
+         <a href="#">link 2</a>
+         <a href="#">link 3</a>
+      </div>
+      <div class="footer">
+         <span class="linkwithicon likes">Like</span>
+         <span class="linkwithicon comments">Comment</span>
+         <span class="users">
+            <span style="background-color: red; position: absolute; left: 0;"></span>
+            <span style="background-color: green; position: absolute; left: 5px;"></span>
+            <span style="background-color: blue; position: absolute; left: 10px;"></span>
+            <span style="background-color: orange; position: absolute; left: 15px;"></span>
+         </span>
+         <span class="linkwithicon views">Views</span>
+      </div>
+   </div>
+</div>
+<div id="colright">right</div>
    </div>
    <footer>
 
