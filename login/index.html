@@ -7,6 +7,9 @@
    <title>Login</title>
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link rel="stylesheet" href="css/style.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 <body>
    <div id="loginouterbox">
@@ -15,6 +18,7 @@
          <form>
             <h1>Welcome</h1>
             <input type="text" class="frmElementSize roundedCorners" name="username" value="" placeholder="username">
+            <div class="usernameError">Insert Username</div>
             <input type="password" class="frmElementSize roundedCorners" name="password">
             <div id="middleRow">
                <div Id="MyCheckBox">  <input type="checkbox" name="remember" value="1"> Remember </div>
@@ -26,22 +30,27 @@
       </div>
       <div id="LoginRightColumn"></div>
    </div>
-   <div id="pseudo">jbhgkujgyu</div><br>
-   <p>skjfhjfref</p>
-   <ul> <!-- parent -->
-      <li>text 1</li> <!-- child -->
-      <li>text 2</li> <!-- child -->
-      <li>text 3</li> 
-      <li>text 4</li>
-      <li>text 5</li>> <!-- child -->
-   </ul>
-   <ol> 
-      <li>text 1</li>
-      <li>text 2</li>
-      <li>text 3</li>
-      <li>text 4</li>
-      <li>text 5</li>
-   </ol>
-   <a href="#">this is link</a>
+
+   <!-- Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         ...
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/main.js"></script>
+   
 </body>
 </html>

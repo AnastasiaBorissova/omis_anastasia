@@ -144,3 +144,7 @@ bottom: 0;
 #test {
 	border: 1px solid green;
 }
+
+td:hover {
+	background-color: rgb(82, 82, 248);
+}

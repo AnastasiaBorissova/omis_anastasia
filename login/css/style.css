@@ -111,7 +111,7 @@ width: 100%;
    display: flex;
    justify-content: space-between;
 }
-
+/*
 #pseudo::after{
 content:'@' 
 color: blue;
@@ -131,7 +131,7 @@ ul li:first-child{
 background-color: green;}
 ul li:nth-child(4){
    background-color: hotpink;
-}
+}*/
 
 a:link{
 color: red;
@@ -144,3 +144,17 @@ a:active{
 }
 a:hover{
    color: green;}
+
+   /*errors*/
+
+#usernameError{
+   display: none;
+   color: red;
+   font-size: 10px;
+   font-weight: bold;
+}
+
+.error {
+   border: 1px solid red;
+   color: red;
+}

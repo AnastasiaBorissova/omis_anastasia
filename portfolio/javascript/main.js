@@ -50,6 +50,7 @@ let colors = ['red', 'green', 'blue'] // object
 
  //increment evlichenie na 1: index++
  //decrement umenshenie na 1: index--
+ 
  for(let index = 0; index <= 2; index++){
 	console.log( 'index = ', index, 'value = ', colors[index] )
  }
@@ -57,7 +58,7 @@ let colors = ['red', 'green', 'blue'] // object
  //functions
 
  //void
- function multiply(x, y){
+ function multiply(x, y){ //void
 	 console.log('(fn1) result = ', x*y)
  }
 
@@ -67,7 +68,7 @@ let colors = ['red', 'green', 'blue'] // object
 		console.log (z[index]);
 		
 	}
-	return x*y
+	return x*y //any
 }
 
 multiply(10, 10)
@@ -90,3 +91,51 @@ btn.addEventListener('click', function(){
 })
 
 
+
+
+
+//Multiply table
+
+function multiplyNumbers (row, col){ //void
+	return row*col
+}
+
+function generateMultiplyTable(cols = 10, rows = 10)
+{
+	let td = ``
+	let tr = ``
+	let table = ``
+
+	for (let indexCol = 1; indexCol <= cols; indexCol++) {
+		//console.log ('index (c) =', index)
+		td= ``
+		for (let indexRow = 1; indexRow <= rows; indexRow++) {
+			console.log ('result (', indexRow, '*', indexCol, '): ', multiplyNumbers(indexRow, indexCol))
+			td += `<td>${multiplyNumbers(indexRow, indexCol)}</td>`
+		}
+		tr += `<tr>${ td }</tr>`
+		
+	}
+	table += `<table class="table table-bordered table-striped">${ tr }</table>`
+	console.log (table)
+
+	let multiplyResult = document.getElementById('multiplyResult')
+	multiplyResult.innerHTML = table
+}
+
+//' one row
+//` multirow
+/*
+let html = `<b> ${  } </b>` //multirow
+let html = '<b>' + firstname + '</b>' 
+console.log (html)
+*/
+
+let btnGenerate = document.getElementById('btnGenerate')
+btnGenerate.addEventListener('click', function(){
+	//logic
+	let colCount = document.getElementById ('colCount').value
+	let rowCount = document.getElementById ('rowCount').value
+	generateMultiplyTable(colCount, rowCount)
+
+})

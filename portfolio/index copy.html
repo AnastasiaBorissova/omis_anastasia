@@ -14,7 +14,45 @@
 	<h1> Hello javascript </h1>
 
 	<div id="test">test</div>
+<!--table>tr*3>td*3{test $}-->
+	<!--
+	<table>
+		<tr>
+			<td>text 1</td>
+			<td>text 2</td>
+			<td>text 3</td>
+		</tr>
+		<tr>
+			<td>text 1</td>
+			<td>text 2</td>
+			<td>text 3</td>
+		</tr>
+		<tr>
+			<td>text 1</td>
+			<td>text 2</td>
+			<td>text 3</td>
+		</tr>
+	</table>
+-->
+
+<form>
 	
+		<div class="mb-3">
+		  <label for="colCount" class="form-label">Count of columns</label>
+		  <input type="number" class="form-control" id="colCount" value="10" >
+		</div>
+
+		<div class="mb-3">
+		  <label for="rowCount" class="form-label">Count of rows</label>
+		  <input type="number" class="form-control" id="rowCount" value="10" >
+		</div>
+
+		<button type="button" id="btnGenerate" class="btn btn-primary">Generate</button>
+	 
+</form>
+
+	<div id="multiplyResult"></div>
+
 	<!--onclick="multiply(2,3)-->
 	<button type="button" id="btn">Click</button>
 
